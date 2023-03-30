@@ -1,0 +1,39 @@
+ALGORITHM counting
+VAR
+i:INTEGER
+c:CHAR
+n,s:STRING
+    
+BEGIN
+      int main()
+      
+        int word=1,character=0;
+        printf("Enter a sentence\n");
+        char c;
+        c=getche(c);
+        while(c != ' ')
+        {
+            if(c == ' ')
+            word++;
+            character++;
+            c=getche();
+        }
+        printf("word= %d\n,word");
+        printf("character = %d",character);
+      
+END
+
+------------------------------------------------------------------
+
+ch=input("Enter a sentence\n")
+print(ch)
+n=len(ch)
+vowels-nb =0
+words-nb =1
+for i in range(0,n):
+    if(ch[i] in [' A', 'E','O','Y','I','U','a','o','e','u','i','y']):
+        vowels-nb=vowels-nb+1
+    if(ch[i]==' '):
+        words-nb=words-nb+1
+        
+print('vowels number is',vowels-nb,'\n words number is',words-nb,'\n characters number is ',n)
